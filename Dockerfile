@@ -16,4 +16,4 @@ COPY data/coordinates.json data/coordinates.json
 
 EXPOSE 8000
 
-CMD ["sh", "-c", "uvicorn api.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["sh", "-c", "echo Starting on PORT=$PORT && python -c 'from api.main import app; print(\"Import OK\")' && exec uvicorn api.main:app --host 0.0.0.0 --port ${PORT:-8000} --log-level info"]
