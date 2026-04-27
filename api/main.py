@@ -78,6 +78,11 @@ async def load_data():
     print(f"Loaded {len(books_data)} books, embeddings shape: {embeddings.shape if embeddings is not None else 'N/A'}")
 
 
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
+
+
 @app.get("/api/books")
 async def get_books():
     return app.state.coordinates

@@ -3,6 +3,5 @@ builder = "dockerfile"
 dockerfilePath = "Dockerfile"
 
 [deploy]
-healthcheckPath = "/api/books"
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 3

@@ -14,4 +14,6 @@ COPY data/embeddings.npy data/embeddings.npy
 COPY data/embedding_index.json data/embedding_index.json
 COPY data/coordinates.json data/coordinates.json
 
-CMD uvicorn api.main:app --host 0.0.0.0 --port ${PORT:-8000}
+EXPOSE 8000
+
+CMD ["sh", "-c", "uvicorn api.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
