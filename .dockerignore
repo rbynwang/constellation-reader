@@ -1,0 +1,14 @@
+web/
+node_modules/
+.venv/
+venv/
+__pycache__/
+.git/
+.env
+.env.local
+eval/
+data/covers/
+data/image_embeddings_cache.npy
+data/text_embeddings_cache.npy
+*.pyc
+.DS_Store

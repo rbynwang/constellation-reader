@@ -8,6 +8,6 @@ pydantic>=2.6.0
 python-dotenv>=1.0.0
 
 # Embedding model (used by /api/extend at runtime)
+# torch is installed separately (CPU-only) in Dockerfile before this file
 sentence-transformers>=2.5.0
-torch>=2.2.0
 transformers>=4.38.0
