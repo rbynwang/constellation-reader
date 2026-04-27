@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2');
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000000;
+}
+
+.year-label {
+  position: absolute;
+  transform: translateX(-50%);
+  color: #B8B0A4;
+  font-size: 11px;
+  font-family: "Switzer", system-ui, sans-serif;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  user-select: none;
+}

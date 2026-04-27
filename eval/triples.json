@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Close affinity — diasporic religion",
+    "description": "Sanity check: three books with clear thematic affinity around African diasporic religious traditions",
+    "book_titles": ["Face of the Gods", "Tell My Horse", "Flash of the Spirit"],
+    "book_ids": [],
+    "notes": "Fill book_ids after enrichment. These should produce strong, specific questions."
+  },
+  {
+    "id": 2,
+    "name": "Cross-domain — fiction, photography, religion",
+    "description": "Harder thread: novel + photography + religious art",
+    "book_titles": ["Beloved", "Body Against Body", "Face of the Gods"],
+    "book_ids": [],
+    "notes": "Should hold tension between lineages rather than collapsing."
+  },
+  {
+    "id": 3,
+    "name": "Fashion monographs cluster",
+    "description": "Three fashion monographs — thinner but real questions expected",
+    "book_titles": [],
+    "book_ids": [],
+    "notes": "Select three after reviewing enriched data for fashion-related books."
+  },
+  {
+    "id": 4,
+    "name": "Deliberately disparate",
+    "description": "One photography + one fashion + one Black history book",
+    "book_titles": [],
+    "book_ids": [],
+    "notes": "Most challenging for the prompt. Questions should not default to 'identity'."
+  },
+  {
+    "id": 5,
+    "name": "Same author — Toni Morrison",
+    "description": "Three Toni Morrison books — should produce three distinct readings, not near-duplicates",
+    "book_titles": [],
+    "book_ids": [],
+    "notes": "Select three Morrison titles from catalog."
+  },
+  {
+    "id": 6,
+    "name": "Photography cluster",
+    "description": "Three photography books to test visual-art-specific question quality",
+    "book_titles": [],
+    "book_ids": [],
+    "notes": "Select after enrichment."
+  },
+  {
+    "id": 7,
+    "name": "Music and performance",
+    "description": "Books about music, performance, or sonic culture",
+    "book_titles": [],
+    "book_ids": [],
+    "notes": "Select after enrichment."
+  },
+  {
+    "id": 8,
+    "name": "Art and design",
+    "description": "Visual art + design books",
+    "book_titles": [],
+    "book_ids": [],
+    "notes": "Select after enrichment."
+  },
+  {
+    "id": 9,
+    "name": "Pair only — two books",
+    "description": "Test the 2-book selection path",
+    "book_titles": [],
+    "book_ids": [],
+    "notes": "Verify questions still work with only 2 inputs."
+  },
+  {
+    "id": 10,
+    "name": "Cross-genre — fiction + nonfiction + art",
+    "description": "Novel + nonfiction history + art monograph",
+    "book_titles": [],
+    "book_ids": [],
+    "notes": "Select after enrichment."
+  }
+]

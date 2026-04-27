@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+web/dist/
+web/.vite/
+
+# Data artifacts (large — exclude build-only caches and covers)
+data/covers/
+data/ibi_books.csv
+data/ibi_books.json
+data/ibi_books_clean.json
+data/image_embeddings_cache.npy
+data/image_embeddings_ids.json
+data/text_embeddings_cache.npy
+data/text_embeddings_ids.json
+data/spotcheck.png
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Eval logs (generated at runtime)
+eval/rerank_logs/
+
+# Screenshots and demo images
+*.png
+web/*.png
+
+# Root-level data dupes
+/ibi_books.csv
+/ibi_books.json

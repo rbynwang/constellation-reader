@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "${BACKEND_URL}/api/:path*"
+    },
+    {
+      "source": "/sanity-cdn/:path*",
+      "destination": "https://cdn.sanity.io/:path*"
+    }
+  ]
+}
