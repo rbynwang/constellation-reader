@@ -15,7 +15,6 @@ import anthropic
 import numpy as np
 from fastapi import APIRouter, Request
 from pydantic import BaseModel
-from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -25,12 +24,13 @@ router = APIRouter()
 CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "claude-sonnet-4-6")
 LOG_DIR = Path(__file__).resolve().parent.parent / "eval" / "rerank_logs"
 
-_text_model: Optional[SentenceTransformer] = None
+_text_model = None
 
 
-def get_text_model() -> SentenceTransformer:
+def get_text_model():
     global _text_model
     if _text_model is None:
+        from sentence_transformers import SentenceTransformer
         _text_model = SentenceTransformer("all-MiniLM-L6-v2")
     return _text_model
 
